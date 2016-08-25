@@ -1,0 +1,31 @@
+diff is a command that can be used to view the differences in two files.
+With diff we compared an old file with a new file and found that the new file has a typo in the word "spacr", which should have been "space".
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+We gain the ability to revert back to the previous state, view diffs etc.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+Pros: You know when you have hit a checkpoint in code, so manual is better.
+Cons: If you forget to commit and start working on something new, and the code breaks, you are in trouble. Autosaving is better in such cases.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Google Docs autosaves changes as they occur whereas autosave is not a thing in Git. So by commiting, saving is taken care of at once.
+
+How can you use the commands git log and git diff to view the history of files?
+Use git log --stat b0678 to view the insertions and deletions in that particular commit.
+Use git diff older_commit newer_commit to view the differences between the two files.
+(git diff considers the first argument as the "original", and the second argument as the "new" version, so additions are lines present in the second argument but not the first.)
+
+How might using version control make you more confident to make changes that could break something?
+Because we know we can switch to a previous state as and when required.
+
+
+Git: select a different default editor (sublime in this case) -n means open in new window, -w means wait until you close the file before continuing
+git config --global core.editor "subl -n -w"
+(dont know)
+git config --global push.default upstream
+(dont know)
+git config --global merge.conflictstyle diff3
+
+Now that you have your workspace set up, what do you want to try using Git for?
+For version control of my code projects.
