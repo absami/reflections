@@ -33,3 +33,12 @@ git branch       shows the branches
 git branch <branch-name>    branch to this branch. Currently checked out branch is marked with * (e.g. * master)
 git checkout <branch-name>  checkout this branch to make it the current one.
 
+quiz: committing changes
+On branch easy_mode
+nothing to commit, working directory clean
+
+quiz: git diff revisited
+working directory   staging area
+staging area        commit1
+commit1             commit2
+
