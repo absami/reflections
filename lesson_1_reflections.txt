@@ -15,6 +15,8 @@ How can you use the commands git log and git diff to view the history of files?
 Use git log --stat b0678 to view the insertions and deletions in that particular commit.
 Use git diff older_commit newer_commit to view the differences between the two files.
 (git diff considers the first argument as the "original", and the second argument as the "new" version, so additions are lines present in the second argument but not the first.)
+(git diff with no arguments displays the diff between 'working directory' and the 'staging area')
+(git diff --staged, displays the diff between the 'staging area' and the 'most recent commit')
 
 How might using version control make you more confident to make changes that could break something?
 Because we know we can switch to a previous state as and when required.

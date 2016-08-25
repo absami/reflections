@@ -22,4 +22,14 @@ What to do if you accidently add a file to the staging area ...
 If you accidentally add a file to the staging area, you can remove it using git reset. 
 For example, if you accidentally add lesson_2_reflections.txt, but don’t want it to be committed yet, run git reset lesson_2_reflections.txt and the file will be removed from the staging area, but it will still be in your working directory.
 
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+The staging area acts as a well, stage where you have the opportunity to select what you finally want to put into the repositry.
+
+git reset --hard, discards any changes made to the 'working directory' as well as the 'staging area'.
+Note that git reset is not a reversible process, so be careful!!
+
+Branches and merging
+git branch       shows the branches
+git branch <branch-name>    branch to this branch. Currently checked out branch is marked with * (e.g. * master)
+git checkout <branch-name>  checkout this branch to make it the current one.
 
