@@ -29,16 +29,13 @@ git reset --hard, discards any changes made to the 'working directory' as well a
 Note that git reset is not a reversible process, so be careful!!
 
 Branches and merging
-git branch       shows the branches
-git branch <branch-name>    branch to this branch. Currently checked out branch is marked with * (e.g. * master)
-git checkout <branch-name>  checkout this branch to make it the current one.
+a) git branch       shows the branches
+b) git branch <branch-name>    branch to this branch. Currently checked out branch is marked with * (e.g. * master)
+c) git checkout <branch-name>  checkout this branch to make it the current one.
+d) git checkout -b <branch-name>     equivalent of b and c done in a single command.
 
-quiz: committing changes
-On branch easy_mode
-nothing to commit, working directory clean
+git log --graph --oneline master coins, for a graphical view of branch and repo structure. --oneline to make the output shorter and easier to see.
 
-quiz: git diff revisited
-working directory   staging area
-staging area        commit1
-commit1             commit2
+git show <commit-hash>, shows the diff between the commit and its 'parent', without actually knowing what the parent was.
 
+git branch -d <branch-name>, to delete a branch.
