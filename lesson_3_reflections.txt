@@ -1,0 +1,9 @@
+To connect a local repo to a 'remote' repo (i.e. a repo on github)
+Create a repo on github.
+Next thing to do is to tell your local repo, the address of the remote repo.
+git remote    to see what remote repos are there (if they are)
+git remote add origin "https://address_of_the_repo_on_github.git"    remote repos are usually named, origin.
+git remote -v    to view verbose info on the remote repo.
+git push origin master    push the master branch of the local repo to the origin (remote)
+This is how you initially setup the repos for github.
+
